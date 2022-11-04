@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0667B1D291584B90054DE04 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B1C291584B90054DE04 /* UIConstants.swift */; };
+		A0667B1F291588070054DE04 /* Consuption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B1E291588070054DE04 /* Consuption.swift */; };
+		A0667B2129158D670054DE04 /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B2029158D670054DE04 /* SecondaryButtonStyle.swift */; };
+		A083D63329156953000DC70C /* ConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D63229156953000DC70C /* ConsumptionView.swift */; };
+		A083D63529156961000DC70C /* UsageStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D63429156961000DC70C /* UsageStatsViewModel.swift */; };
+		A083D639291572C6000DC70C /* UsageStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D638291572C6000DC70C /* UsageStatsView.swift */; };
+		A083D63C2915778A000DC70C /* DailyGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D63B2915778A000DC70C /* DailyGraphView.swift */; };
+		A083D63E2915779C000DC70C /* DailyGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D63D2915779C000DC70C /* DailyGraphViewModel.swift */; };
+		A083D64329158459000DC70C /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D64229158459000DC70C /* PrimaryButtonStyle.swift */; };
 		A0874EBB29155D5F00F118EA /* JunctionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0874EBA29155D5F00F118EA /* JunctionApp.swift */; };
-		A0874EBD29155D5F00F118EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0874EBC29155D5F00F118EA /* ContentView.swift */; };
 		A0874EBF29155D6100F118EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0874EBE29155D6100F118EA /* Assets.xcassets */; };
 		A0874EC229155D6100F118EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0874EC129155D6100F118EA /* Preview Assets.xcassets */; };
 		FDFD794A51749297971488B2 /* Pods_JunctionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC7015127477DA097B8FBE /* Pods_JunctionApp.framework */; };
@@ -17,9 +25,17 @@
 /* Begin PBXFileReference section */
 		1C1C15EF3A677E46A03DEFDE /* Pods-JunctionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JunctionApp.release.xcconfig"; path = "Target Support Files/Pods-JunctionApp/Pods-JunctionApp.release.xcconfig"; sourceTree = "<group>"; };
 		88FC7015127477DA097B8FBE /* Pods_JunctionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JunctionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0667B1C291584B90054DE04 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		A0667B1E291588070054DE04 /* Consuption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consuption.swift; sourceTree = "<group>"; };
+		A0667B2029158D670054DE04 /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
+		A083D63229156953000DC70C /* ConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView.swift; sourceTree = "<group>"; };
+		A083D63429156961000DC70C /* UsageStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageStatsViewModel.swift; sourceTree = "<group>"; };
+		A083D638291572C6000DC70C /* UsageStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageStatsView.swift; sourceTree = "<group>"; };
+		A083D63B2915778A000DC70C /* DailyGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGraphView.swift; sourceTree = "<group>"; };
+		A083D63D2915779C000DC70C /* DailyGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGraphViewModel.swift; sourceTree = "<group>"; };
+		A083D64229158459000DC70C /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		A0874EB729155D5F00F118EA /* JunctionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunctionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0874EBA29155D5F00F118EA /* JunctionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunctionApp.swift; sourceTree = "<group>"; };
-		A0874EBC29155D5F00F118EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0874EBE29155D6100F118EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0874EC129155D6100F118EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD8B9E178DCAB8806A00321C /* Pods-JunctionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JunctionApp.debug.xcconfig"; path = "Target Support Files/Pods-JunctionApp/Pods-JunctionApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +53,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0667B1B291584A80054DE04 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B1C291584B90054DE04 /* UIConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A083D630291568A4000DC70C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A083D631291568B8000DC70C /* Consumption */ = {
+			isa = PBXGroup;
+			children = (
+				A083D637291572AE000DC70C /* Usage Stats */,
+				A083D63A29157764000DC70C /* Daily Graph */,
+				A083D63229156953000DC70C /* ConsumptionView.swift */,
+			);
+			path = Consumption;
+			sourceTree = "<group>";
+		};
+		A083D6362915698A000DC70C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A083D631291568B8000DC70C /* Consumption */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A083D637291572AE000DC70C /* Usage Stats */ = {
+			isa = PBXGroup;
+			children = (
+				A083D638291572C6000DC70C /* UsageStatsView.swift */,
+				A083D63429156961000DC70C /* UsageStatsViewModel.swift */,
+			);
+			path = "Usage Stats";
+			sourceTree = "<group>";
+		};
+		A083D63A29157764000DC70C /* Daily Graph */ = {
+			isa = PBXGroup;
+			children = (
+				A083D63B2915778A000DC70C /* DailyGraphView.swift */,
+				A083D63D2915779C000DC70C /* DailyGraphViewModel.swift */,
+				A0667B1E291588070054DE04 /* Consuption.swift */,
+			);
+			path = "Daily Graph";
+			sourceTree = "<group>";
+		};
+		A083D63F2915841F000DC70C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B1B291584A80054DE04 /* Constants */,
+				A083D6402915842A000DC70C /* Styles */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A083D6402915842A000DC70C /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A083D64229158459000DC70C /* PrimaryButtonStyle.swift */,
+				A0667B2029158D670054DE04 /* SecondaryButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		A0874EAE29155D5F00F118EA = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +144,10 @@
 		A0874EB929155D5F00F118EA /* JunctionApp */ = {
 			isa = PBXGroup;
 			children = (
+				A083D630291568A4000DC70C /* Services */,
+				A083D6362915698A000DC70C /* Modules */,
+				A083D63F2915841F000DC70C /* UI */,
 				A0874EBA29155D5F00F118EA /* JunctionApp.swift */,
-				A0874EBC29155D5F00F118EA /* ContentView.swift */,
 				A0874EBE29155D6100F118EA /* Assets.xcassets */,
 				A0874EC029155D6100F118EA /* Preview Content */,
 			);
@@ -80,7 +168,6 @@
 				CD8B9E178DCAB8806A00321C /* Pods-JunctionApp.debug.xcconfig */,
 				1C1C15EF3A677E46A03DEFDE /* Pods-JunctionApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,8 +293,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0874EBD29155D5F00F118EA /* ContentView.swift in Sources */,
+				A083D64329158459000DC70C /* PrimaryButtonStyle.swift in Sources */,
+				A083D63529156961000DC70C /* UsageStatsViewModel.swift in Sources */,
 				A0874EBB29155D5F00F118EA /* JunctionApp.swift in Sources */,
+				A0667B1F291588070054DE04 /* Consuption.swift in Sources */,
+				A0667B2129158D670054DE04 /* SecondaryButtonStyle.swift in Sources */,
+				A083D639291572C6000DC70C /* UsageStatsView.swift in Sources */,
+				A083D63E2915779C000DC70C /* DailyGraphViewModel.swift in Sources */,
+				A083D63C2915778A000DC70C /* DailyGraphView.swift in Sources */,
+				A083D63329156953000DC70C /* ConsumptionView.swift in Sources */,
+				A0667B1D291584B90054DE04 /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +439,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +469,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
