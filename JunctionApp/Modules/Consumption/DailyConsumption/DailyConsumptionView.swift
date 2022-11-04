@@ -7,6 +7,9 @@ struct DailyConsumptionView: View {
     var body: some View {
         VStack{
             Text(viewModel.date.formattedDate)
+                .font(.title2)
+                .bold()
+                .foregroundColor(Color.fromColorCode(.textColor))
 
             UsageStatsView(viewModel: UsageStatsViewModel(viewModel.consumption))
 

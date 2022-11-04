@@ -6,7 +6,7 @@ struct ConsumptionView: View {
 
     var body: some View {
         VStack {
-            Text("Energy Consumption").font(.title)
+            Text("Energy Consumption").font(.largeTitle).padding()
 
             DailyConsumptionView(viewModel: c.dailyConsumptionViewModel)
 

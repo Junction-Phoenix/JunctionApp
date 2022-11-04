@@ -19,6 +19,8 @@
 		A0667B352915A0EE0054DE04 /* ConsumptionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B342915A0EE0054DE04 /* ConsumptionDto.swift */; };
 		A0667B382915A1AE0054DE04 /* Bootstrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B372915A1AE0054DE04 /* Bootstrapper.swift */; };
 		A0667B3A2915A1CF0054DE04 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B392915A1CF0054DE04 /* DIContainer.swift */; };
+		A0667B3D2915C4160054DE04 /* ColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B3C2915C4160054DE04 /* ColorCode.swift */; };
+		A0667B402915C5250054DE04 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B3F2915C5250054DE04 /* ColorExtensions.swift */; };
 		A083D63329156953000DC70C /* ConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D63229156953000DC70C /* ConsumptionView.swift */; };
 		A083D63529156961000DC70C /* UsageStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D63429156961000DC70C /* UsageStatsViewModel.swift */; };
 		A083D639291572C6000DC70C /* UsageStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D638291572C6000DC70C /* UsageStatsView.swift */; };
@@ -46,6 +48,8 @@
 		A0667B342915A0EE0054DE04 /* ConsumptionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionDto.swift; sourceTree = "<group>"; };
 		A0667B372915A1AE0054DE04 /* Bootstrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrapper.swift; sourceTree = "<group>"; };
 		A0667B392915A1CF0054DE04 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		A0667B3C2915C4160054DE04 /* ColorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCode.swift; sourceTree = "<group>"; };
+		A0667B3F2915C5250054DE04 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A083D63229156953000DC70C /* ConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView.swift; sourceTree = "<group>"; };
 		A083D63429156961000DC70C /* UsageStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageStatsViewModel.swift; sourceTree = "<group>"; };
 		A083D638291572C6000DC70C /* UsageStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageStatsView.swift; sourceTree = "<group>"; };
@@ -124,6 +128,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A0667B3B2915C4050054DE04 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B3C2915C4160054DE04 /* ColorCode.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A0667B3E2915C5110054DE04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B3F2915C5250054DE04 /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A083D630291568A4000DC70C /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +194,8 @@
 		A083D63F2915841F000DC70C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A0667B3E2915C5110054DE04 /* Extensions */,
+				A0667B3B2915C4050054DE04 /* Utilities */,
 				A0667B1B291584A80054DE04 /* Constants */,
 				A083D6402915842A000DC70C /* Styles */,
 			);
@@ -364,6 +386,7 @@
 				A0667B2729159C470054DE04 /* DailyConsumptionViewModel.swift in Sources */,
 				A083D64329158459000DC70C /* PrimaryButtonStyle.swift in Sources */,
 				A0667B332915A0C80054DE04 /* DailyConsumptionDto.swift in Sources */,
+				A0667B3D2915C4160054DE04 /* ColorCode.swift in Sources */,
 				A0667B2E29159F750054DE04 /* CommunicatorProtocol.swift in Sources */,
 				A083D63529156961000DC70C /* UsageStatsViewModel.swift in Sources */,
 				A0667B382915A1AE0054DE04 /* Bootstrapper.swift in Sources */,
@@ -379,6 +402,7 @@
 				A0667B1D291584B90054DE04 /* UIConstants.swift in Sources */,
 				A0667B3A2915A1CF0054DE04 /* DIContainer.swift in Sources */,
 				A0667B2A29159E390054DE04 /* DateExtensions.swift in Sources */,
+				A0667B402915C5250054DE04 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
