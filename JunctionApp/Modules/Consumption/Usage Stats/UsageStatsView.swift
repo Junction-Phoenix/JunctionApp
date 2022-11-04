@@ -13,7 +13,7 @@ struct UsageStatsView: View {
 
             VStack(alignment: .leading) {
                 Text(String(format: "%.2f kWh", viewModel.averageUsage / 1000.0))
-                Text(String(format: "%.2f €/kWh", viewModel.averagePrice * 10.0))
+                Text(String(format: "%.2f €/kWh", viewModel.averagePrice / 100.0))
                 Text(String(format: "%.2f €", viewModel.totalPrice / 100.0))
 
             }.padding()

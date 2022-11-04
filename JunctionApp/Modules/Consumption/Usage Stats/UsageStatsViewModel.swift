@@ -2,12 +2,12 @@ import Foundation
 
 class UsageStatsViewModel: ObservableObject {
 
-    @Published var averageUsage: Float = 0
-    @Published var averagePrice: Float = 0
+    @Published var averageUsage: Float = 0 // Wh
+    @Published var averagePrice: Float = 0 // ct/kWh
 
     var totalPrice: Float {
         get {
-            return Float(averageUsage) * Float(averagePrice)
+            return (Float(averageUsage) / 1000.0) * Float(averagePrice)
         }
     }
 
