@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  JunctionApp
-//
-//  Created by Vytenis Petrauskas on 2022-11-04.
-//
-
 import SwiftUI
 
 struct ContentView: View {
