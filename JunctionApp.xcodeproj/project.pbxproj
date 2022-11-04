@@ -11,14 +11,18 @@
 		A0874EBD29155D5F00F118EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0874EBC29155D5F00F118EA /* ContentView.swift */; };
 		A0874EBF29155D6100F118EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0874EBE29155D6100F118EA /* Assets.xcassets */; };
 		A0874EC229155D6100F118EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0874EC129155D6100F118EA /* Preview Assets.xcassets */; };
+		FDFD794A51749297971488B2 /* Pods_JunctionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC7015127477DA097B8FBE /* Pods_JunctionApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1C15EF3A677E46A03DEFDE /* Pods-JunctionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JunctionApp.release.xcconfig"; path = "Target Support Files/Pods-JunctionApp/Pods-JunctionApp.release.xcconfig"; sourceTree = "<group>"; };
+		88FC7015127477DA097B8FBE /* Pods_JunctionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JunctionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0874EB729155D5F00F118EA /* JunctionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunctionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0874EBA29155D5F00F118EA /* JunctionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunctionApp.swift; sourceTree = "<group>"; };
 		A0874EBC29155D5F00F118EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0874EBE29155D6100F118EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0874EC129155D6100F118EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD8B9E178DCAB8806A00321C /* Pods-JunctionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JunctionApp.debug.xcconfig"; path = "Target Support Files/Pods-JunctionApp/Pods-JunctionApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFD794A51749297971488B2 /* Pods_JunctionApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				A0874EB929155D5F00F118EA /* JunctionApp */,
 				A0874EB829155D5F00F118EA /* Products */,
+				CB9A63E469DFC5BFB9EDA990 /* Pods */,
+				F4980E9BDF486DA4254144F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CB9A63E469DFC5BFB9EDA990 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B9E178DCAB8806A00321C /* Pods-JunctionApp.debug.xcconfig */,
+				1C1C15EF3A677E46A03DEFDE /* Pods-JunctionApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4980E9BDF486DA4254144F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88FC7015127477DA097B8FBE /* Pods_JunctionApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0874EC529155D6100F118EA /* Build configuration list for PBXNativeTarget "JunctionApp" */;
 			buildPhases = (
+				A449F0FC464A12F3EC616710 /* [CP] Check Pods Manifest.lock */,
 				A0874EB329155D5F00F118EA /* Sources */,
 				A0874EB429155D5F00F118EA /* Frameworks */,
 				A0874EB529155D5F00F118EA /* Resources */,
+				833C9AE7E74DE872EC5F7043 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		833C9AE7E74DE872EC5F7043 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JunctionApp/Pods-JunctionApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JunctionApp/Pods-JunctionApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JunctionApp/Pods-JunctionApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A449F0FC464A12F3EC616710 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JunctionApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0874EB329155D5F00F118EA /* Sources */ = {
@@ -261,6 +330,7 @@
 		};
 		A0874EC629155D6100F118EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD8B9E178DCAB8806A00321C /* Pods-JunctionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +359,7 @@
 		};
 		A0874EC729155D6100F118EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C1C15EF3A677E46A03DEFDE /* Pods-JunctionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
