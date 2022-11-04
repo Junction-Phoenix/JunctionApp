@@ -13,7 +13,7 @@ struct DailyConsumptionView: View {
 
             UsageStatsView(viewModel: UsageStatsViewModel(viewModel.consumption))
 
-            DailyGraphView(viewModel: DailyGraphViewModel.Preview)
+            DailyGraphView(viewModel: DailyGraphViewModel(viewModel.consumption))
                 .frame(height: 256).padding()
         }.task {
             await viewModel.retrieveConsumption()

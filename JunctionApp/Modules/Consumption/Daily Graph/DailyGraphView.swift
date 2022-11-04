@@ -4,19 +4,21 @@ import Charts
 struct DailyGraphView: View {
     @ObservedObject var viewModel: DailyGraphViewModel
 
+    let colorCodes: [ColorCode] = [.graphExcellent, .graphGood, .graphAverage, .graphBad]
+
     var body: some View {
         Chart {
-            ForEach(viewModel.consumption) { consuption in
+            ForEach(viewModel.consumption) { consumption in
                 BarMark(
-                    x: .value("Hour", consuption.id),
-                    y: .value("Consumption", consuption.usage)
-                ).foregroundStyle(by: .value("Price", consuption.price))
-                    .annotation() {
-                        Image(systemName: "bolt.fill")
-                            .foregroundColor(Color.accentColor)
-                    }
+                    x: .value("Hour", consumption.id),
+                    y: .value("Consumption", consumption.usage)
+                ).foregroundStyle(barColor(viewModel.tier(consumption)))
             }
         }
+    }
+
+    private func barColor(_ index: Int) -> Color {
+        return Color.fromColorCode(colorCodes[index])
     }
 }
 
