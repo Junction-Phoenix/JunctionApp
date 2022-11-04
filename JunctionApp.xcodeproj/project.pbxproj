@@ -8,8 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A0667B1D291584B90054DE04 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B1C291584B90054DE04 /* UIConstants.swift */; };
-		A0667B1F291588070054DE04 /* Consuption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B1E291588070054DE04 /* Consuption.swift */; };
+		A0667B1F291588070054DE04 /* Consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B1E291588070054DE04 /* Consumption.swift */; };
 		A0667B2129158D670054DE04 /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B2029158D670054DE04 /* SecondaryButtonStyle.swift */; };
+		A0667B2529159BD80054DE04 /* DailyConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B2429159BD80054DE04 /* DailyConsumptionView.swift */; };
+		A0667B2729159C470054DE04 /* DailyConsumptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B2629159C470054DE04 /* DailyConsumptionViewModel.swift */; };
+		A0667B2A29159E390054DE04 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B2929159E390054DE04 /* DateExtensions.swift */; };
+		A0667B2E29159F750054DE04 /* CommunicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B2D29159F750054DE04 /* CommunicatorProtocol.swift */; };
+		A0667B3029159FB30054DE04 /* Communicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B2F29159FB30054DE04 /* Communicator.swift */; };
+		A0667B332915A0C80054DE04 /* DailyConsumptionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B322915A0C80054DE04 /* DailyConsumptionDto.swift */; };
+		A0667B352915A0EE0054DE04 /* ConsumptionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B342915A0EE0054DE04 /* ConsumptionDto.swift */; };
+		A0667B382915A1AE0054DE04 /* Bootstrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B372915A1AE0054DE04 /* Bootstrapper.swift */; };
+		A0667B3A2915A1CF0054DE04 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0667B392915A1CF0054DE04 /* DIContainer.swift */; };
 		A083D63329156953000DC70C /* ConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D63229156953000DC70C /* ConsumptionView.swift */; };
 		A083D63529156961000DC70C /* UsageStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D63429156961000DC70C /* UsageStatsViewModel.swift */; };
 		A083D639291572C6000DC70C /* UsageStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083D638291572C6000DC70C /* UsageStatsView.swift */; };
@@ -26,8 +35,17 @@
 		1C1C15EF3A677E46A03DEFDE /* Pods-JunctionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JunctionApp.release.xcconfig"; path = "Target Support Files/Pods-JunctionApp/Pods-JunctionApp.release.xcconfig"; sourceTree = "<group>"; };
 		88FC7015127477DA097B8FBE /* Pods_JunctionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JunctionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0667B1C291584B90054DE04 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
-		A0667B1E291588070054DE04 /* Consuption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consuption.swift; sourceTree = "<group>"; };
+		A0667B1E291588070054DE04 /* Consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumption.swift; sourceTree = "<group>"; };
 		A0667B2029158D670054DE04 /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
+		A0667B2429159BD80054DE04 /* DailyConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConsumptionView.swift; sourceTree = "<group>"; };
+		A0667B2629159C470054DE04 /* DailyConsumptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConsumptionViewModel.swift; sourceTree = "<group>"; };
+		A0667B2929159E390054DE04 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		A0667B2D29159F750054DE04 /* CommunicatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicatorProtocol.swift; sourceTree = "<group>"; };
+		A0667B2F29159FB30054DE04 /* Communicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
+		A0667B322915A0C80054DE04 /* DailyConsumptionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConsumptionDto.swift; sourceTree = "<group>"; };
+		A0667B342915A0EE0054DE04 /* ConsumptionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionDto.swift; sourceTree = "<group>"; };
+		A0667B372915A1AE0054DE04 /* Bootstrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrapper.swift; sourceTree = "<group>"; };
+		A0667B392915A1CF0054DE04 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		A083D63229156953000DC70C /* ConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView.swift; sourceTree = "<group>"; };
 		A083D63429156961000DC70C /* UsageStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageStatsViewModel.swift; sourceTree = "<group>"; };
 		A083D638291572C6000DC70C /* UsageStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageStatsView.swift; sourceTree = "<group>"; };
@@ -61,9 +79,56 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		A0667B2229159B540054DE04 /* DailyConsumption */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B2429159BD80054DE04 /* DailyConsumptionView.swift */,
+				A0667B2629159C470054DE04 /* DailyConsumptionViewModel.swift */,
+			);
+			path = DailyConsumption;
+			sourceTree = "<group>";
+		};
+		A0667B2829159E230054DE04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B2929159E390054DE04 /* DateExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0667B2B29159F460054DE04 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B312915A0B70054DE04 /* Models */,
+				A0667B2D29159F750054DE04 /* CommunicatorProtocol.swift */,
+				A0667B2F29159FB30054DE04 /* Communicator.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A0667B2C29159F510054DE04 /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B372915A1AE0054DE04 /* Bootstrapper.swift */,
+				A0667B392915A1CF0054DE04 /* DIContainer.swift */,
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		A0667B312915A0B70054DE04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0667B322915A0C80054DE04 /* DailyConsumptionDto.swift */,
+				A0667B342915A0EE0054DE04 /* ConsumptionDto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A083D630291568A4000DC70C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A0667B2C29159F510054DE04 /* Dependency Injection */,
+				A0667B2B29159F460054DE04 /* Networking */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -73,7 +138,9 @@
 			children = (
 				A083D637291572AE000DC70C /* Usage Stats */,
 				A083D63A29157764000DC70C /* Daily Graph */,
+				A0667B2229159B540054DE04 /* DailyConsumption */,
 				A083D63229156953000DC70C /* ConsumptionView.swift */,
+				A0667B1E291588070054DE04 /* Consumption.swift */,
 			);
 			path = Consumption;
 			sourceTree = "<group>";
@@ -100,7 +167,6 @@
 			children = (
 				A083D63B2915778A000DC70C /* DailyGraphView.swift */,
 				A083D63D2915779C000DC70C /* DailyGraphViewModel.swift */,
-				A0667B1E291588070054DE04 /* Consuption.swift */,
 			);
 			path = "Daily Graph";
 			sourceTree = "<group>";
@@ -145,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				A083D630291568A4000DC70C /* Services */,
+				A0667B2829159E230054DE04 /* Extensions */,
 				A083D6362915698A000DC70C /* Modules */,
 				A083D63F2915841F000DC70C /* UI */,
 				A0874EBA29155D5F00F118EA /* JunctionApp.swift */,
@@ -293,16 +360,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0667B3029159FB30054DE04 /* Communicator.swift in Sources */,
+				A0667B2729159C470054DE04 /* DailyConsumptionViewModel.swift in Sources */,
 				A083D64329158459000DC70C /* PrimaryButtonStyle.swift in Sources */,
+				A0667B332915A0C80054DE04 /* DailyConsumptionDto.swift in Sources */,
+				A0667B2E29159F750054DE04 /* CommunicatorProtocol.swift in Sources */,
 				A083D63529156961000DC70C /* UsageStatsViewModel.swift in Sources */,
+				A0667B382915A1AE0054DE04 /* Bootstrapper.swift in Sources */,
 				A0874EBB29155D5F00F118EA /* JunctionApp.swift in Sources */,
-				A0667B1F291588070054DE04 /* Consuption.swift in Sources */,
+				A0667B1F291588070054DE04 /* Consumption.swift in Sources */,
+				A0667B2529159BD80054DE04 /* DailyConsumptionView.swift in Sources */,
 				A0667B2129158D670054DE04 /* SecondaryButtonStyle.swift in Sources */,
 				A083D639291572C6000DC70C /* UsageStatsView.swift in Sources */,
 				A083D63E2915779C000DC70C /* DailyGraphViewModel.swift in Sources */,
 				A083D63C2915778A000DC70C /* DailyGraphView.swift in Sources */,
 				A083D63329156953000DC70C /* ConsumptionView.swift in Sources */,
+				A0667B352915A0EE0054DE04 /* ConsumptionDto.swift in Sources */,
 				A0667B1D291584B90054DE04 /* UIConstants.swift in Sources */,
+				A0667B3A2915A1CF0054DE04 /* DIContainer.swift in Sources */,
+				A0667B2A29159E390054DE04 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

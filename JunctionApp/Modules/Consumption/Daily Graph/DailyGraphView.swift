@@ -8,7 +8,7 @@ struct DailyGraphView: View {
         Chart {
             ForEach(viewModel.consumption) { consuption in
                 BarMark(
-                    x: .value("Hour", consuption.hour),
+                    x: .value("Hour", consuption.id),
                     y: .value("Consumption", consuption.usage)
                 ).foregroundStyle(by: .value("Price", consuption.price))
                     .annotation() {

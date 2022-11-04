@@ -1,15 +1,14 @@
 import SwiftUI
 
 struct ConsumptionView: View {
+
+    @EnvironmentObject var c: DIContainer
+
     var body: some View {
         VStack {
             Text("Energy Consumption").font(.title)
-            Text("2022-11-04")
 
-            UsageStatsView(viewModel: UsageStatsViewModel.Preview)
-
-            DailyGraphView(viewModel: DailyGraphViewModel.Preview)
-                .frame(height: 256).padding()
+            DailyConsumptionView(viewModel: c.dailyConsumptionViewModel)
 
             // TODO: Extract in a separate view as a tab selector
             HStack() {
@@ -37,6 +36,8 @@ struct ConsumptionView: View {
 
 struct ConsumptionView_Previews: PreviewProvider {
     static var previews: some View {
-        ConsumptionView()
+        let container = Bootstrapper().createContainer()
+
+        ConsumptionView().environmentObject(container)
     }
 }

@@ -12,9 +12,10 @@ struct UsageStatsView: View {
             }.padding()
 
             VStack(alignment: .leading) {
-                Text(String(format: "%.2f kWh", viewModel.averageUsage))
-                Text("\(viewModel.averagePrice) ct/kWh")
-                Text("\(viewModel.total) €")
+                Text(String(format: "%.2f kWh", viewModel.averageUsage / 1000.0))
+                Text(String(format: "%.2f €/kWh", viewModel.averagePrice * 10.0))
+                Text(String(format: "%.2f €", viewModel.totalPrice / 100.0))
+
             }.padding()
         }.padding()
     }
@@ -22,6 +23,6 @@ struct UsageStatsView: View {
 
 struct UsageStatsView_Previews: PreviewProvider {
     static var previews: some View {
-        UsageStatsView(viewModel: UsageStatsViewModel.Preview) .previewLayout(.fixed(width: 280.0, height: 120.0))
+        UsageStatsView(viewModel: UsageStatsViewModel.Preview) .previewLayout(.fixed(width: 360.0, height: 120.0))
     }
 }
