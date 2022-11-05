@@ -17,9 +17,15 @@ struct DailyConsumptionView: View {
             DailyGraphView(viewModel: DailyGraphViewModel(viewModel.consumption))
                 .frame(height: 256)
                 .padding(UIConstants.padding)
-        }.task {
+        }
+        .task {
             await viewModel.retrieveConsumption()
         }
+        .onReceive(viewModel.$date, perform: { date in
+            Task.init{
+                await viewModel.retrieveConsumption()
+            }
+        })
     }
 }
 

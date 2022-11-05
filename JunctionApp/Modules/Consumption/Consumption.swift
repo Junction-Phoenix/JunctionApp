@@ -5,6 +5,8 @@ struct Consumption: Identifiable {
     
     var usage: Int
     var price: Int
+
+    var animate: Bool = false
     
     static var Preview: [Consumption] {
         get {
