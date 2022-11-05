@@ -5,6 +5,8 @@ struct UsageStatsView: View {
 
     var body: some View {
         HStack {
+            Spacer()
+
             VStack(alignment: .leading) {
                 Text("Avg. usage:")
                     .padding(1.0)
@@ -29,8 +31,9 @@ struct UsageStatsView: View {
                     .padding(1.0)
                     .foregroundColor(Color.fromColorCode(.textColor))
                     .bold()
-
             }.padding()
+
+            Spacer()
         }
         .padding(UIConstants.padding)
         .background(Color.fromColorCode(.cardBackgroundColor))
