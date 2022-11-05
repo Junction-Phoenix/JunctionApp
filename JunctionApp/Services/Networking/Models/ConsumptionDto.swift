@@ -1,9 +1,12 @@
 import Foundation
 
 struct ConsumptionDto: Codable {
-    let hour, usage, price: Int
+    let hour: Int
+    let actualUsage: Int
+    let predictedUsage: Int
+    let price: Int
 
     func toConsumption() -> Consumption {
-        return Consumption(id: hour, usage: usage, price: price)
+        return Consumption(id: hour, usage: actualUsage, price: price)
     }
 }
