@@ -2,7 +2,7 @@ import SwiftUI
 
 struct DeviceListView: View {
     var viewModel: DeviceListViewModel
-    
+
     var body: some View {
         VStack {
             Text("Devices Usage")
@@ -11,10 +11,12 @@ struct DeviceListView: View {
                 .foregroundColor(Color.fromColorCode(.textColor))
             Text(viewModel.date.formattedDate)
                 .foregroundColor(Color.fromColorCode(.textColor))
-            
+
             List {
                 ForEach(viewModel.devices) { device in
-                    NavigationLink(destination: DeviceStatsView()) {
+                    NavigationLink(destination: DeviceStatsView(
+                        viewModel: DailyConsumptionViewModel(Communicator())
+                    )) {
                         DeviceRowView(
                             viewModel: DeviceRowViewModel(device)
                         )

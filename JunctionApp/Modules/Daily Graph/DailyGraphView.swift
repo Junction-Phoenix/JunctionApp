@@ -89,7 +89,7 @@ struct DailyGraphView: View {
             ForEach(viewModel.consumption) { consumption in
                 BarMark(
                     x: .value("Hour", consumption.id),
-                    y: .value("Consumption", consumption.usage)
+                    y: .value("Consumption", consumption.actualUsage)
                   //  y: .value("Consumption", consumption.animate ? consumption.usage : 0)
                 ).foregroundStyle(barColor(viewModel.tier(consumption)))
             }
@@ -113,7 +113,7 @@ struct DailyGraphView: View {
         .chartYScale(domain: ClosedRange(
             uncheckedBounds: (
                 lower: 0,
-                upper: 1500
+                upper: 2000
             )
         ))
         .chartYAxis {

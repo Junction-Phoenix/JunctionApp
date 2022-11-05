@@ -7,6 +7,6 @@ struct ConsumptionDto: Codable {
     let price: Int
 
     func toConsumption() -> Consumption {
-        return Consumption(id: hour, usage: actualUsage, price: price)
+        return Consumption(id: hour, actualUsage: actualUsage, estimatedUsage: predictedUsage, price: price)
     }
 }
