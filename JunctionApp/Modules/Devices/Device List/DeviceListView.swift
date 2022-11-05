@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct DeviceListView: View {
-    var viewModel: DeviceListViewModel
+
+    @ObservedObject var viewModel: DeviceListViewModel
 
     var body: some View {
         VStack {
@@ -24,14 +25,14 @@ struct DeviceListView: View {
                 }
             }
         }
-        //            .task {
-        //                await viewModel.retrieveDevices()
-        //            }
+        .task {
+            await viewModel.retrieveDevices()
+        }
     }
 }
 
 struct DeviceListView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceListView(viewModel: DeviceListViewModel.Preview)
+        DeviceListView(viewModel: DeviceListViewModel(Communicator()))
     }
 }

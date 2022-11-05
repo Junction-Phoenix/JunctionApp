@@ -40,28 +40,11 @@ struct ConsumptionView: View {
                             }
                     )
 
-                // TODO: Extract in a separate view as a tab selector
-    //            HStack() {
-    //                Button("1 h") {
-    //
-    //                }.buttonStyle(PrimaryButtonStyle())
-    //                Spacer(minLength: UIConstants.buttonSpacing)
-    //                Button("1 d") {
-    //
-    //                }.buttonStyle(SecondaryButtonStyle())
-    //                Spacer(minLength: UIConstants.buttonSpacing)
-    //                Button("1 w") {
-    //
-    //                }.buttonStyle(SecondaryButtonStyle())
-    //                Spacer(minLength: UIConstants.buttonSpacing)
-    //                Button("1 m") {
-    //
-    //                }.buttonStyle(SecondaryButtonStyle())
-    //            }.padding()
-
                 Spacer()
 
-                NavigationLink(destination: DeviceListView(viewModel: DeviceListViewModel.Preview)) {
+                NavigationLink(destination: DeviceListView(
+                    viewModel: DeviceListViewModel(c.communicator, date)
+                )) {
                     FakeButton(text: "Check Devices").padding()
                 }
             }.padding()
