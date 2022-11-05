@@ -9,4 +9,6 @@ enum ColorCode: String {
     case graphGood = "Graph Good"
     case graphAverage = "Graph Average"
     case graphBad = "Graph Bad"
+
+    case gradientEndColor = "Gradient End Color"
 }

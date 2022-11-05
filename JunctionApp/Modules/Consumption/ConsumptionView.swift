@@ -62,7 +62,7 @@ struct ConsumptionView: View {
                 Spacer()
 
                 NavigationLink(destination: DeviceListView(viewModel: DeviceListViewModel.Preview)) {
-                    Text("Check Devices")
+                    FakeButton(text: "Check Devices").padding()
                 }
 
                 Spacer()
