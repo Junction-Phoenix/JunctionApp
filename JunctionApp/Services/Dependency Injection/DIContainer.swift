@@ -2,14 +2,11 @@ import Foundation
 
 class DIContainer: ObservableObject {
 
-    @Published var communicator: Communicator
-    @Published var dailyConsumptionViewModel: DailyConsumptionViewModel
+    @Published var communicator: CommunicatorProtocol
 
     init(
-        _ communicator: Communicator,
-        _ dailyConsumptionViewModel: DailyConsumptionViewModel
+        _ communicator: CommunicatorProtocol
     ) {
         self.communicator = communicator
-        self.dailyConsumptionViewModel = dailyConsumptionViewModel
     }
 }
