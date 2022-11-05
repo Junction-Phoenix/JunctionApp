@@ -21,4 +21,13 @@ class Communicator: CommunicatorProtocol {
             }
         }
     }
+
+    func getDeviceConsumoption(id: Int, of date: Date) async -> DailyConsumptionDto? {
+        await withCheckedContinuation { cont in
+            let endpoint = "\(apiUrl)/stats/hourly/device/\(id)?start=\(date.formattedDate)"
+            AF.request(endpoint, method: .get).responseDecodable(of: DailyConsumptionDto.self) { response in
+                cont.resume(returning: response.value)
+            }
+        }
+    }
 }

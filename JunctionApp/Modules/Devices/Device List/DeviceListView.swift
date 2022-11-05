@@ -2,6 +2,8 @@ import SwiftUI
 
 struct DeviceListView: View {
 
+    @EnvironmentObject var c: DIContainer
+
     @ObservedObject var viewModel: DeviceListViewModel
 
     var body: some View {
@@ -15,9 +17,11 @@ struct DeviceListView: View {
 
             List {
                 ForEach(viewModel.devices) { device in
-                    NavigationLink(destination: DeviceStatsView(
-                        viewModel: DailyConsumptionViewModel(Communicator())
-                    )) {
+                    NavigationLink(
+                        destination: DeviceStatsView(
+                            viewModel: DeviceStatsViewModel(device, viewModel.date)
+                        ).environmentObject(c)
+                    ) {
                         DeviceRowView(
                             viewModel: DeviceRowViewModel(device)
                         )
@@ -33,6 +37,9 @@ struct DeviceListView: View {
 
 struct DeviceListView_Previews: PreviewProvider {
     static var previews: some View {
+        let container = Bootstrapper().createContainer()
+
         DeviceListView(viewModel: DeviceListViewModel(Communicator()))
+            .environmentObject(container)
     }
 }

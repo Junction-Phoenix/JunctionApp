@@ -42,9 +42,11 @@ struct ConsumptionView: View {
 
                 Spacer()
 
-                NavigationLink(destination: DeviceListView(
-                    viewModel: DeviceListViewModel(c.communicator, date)
-                )) {
+                NavigationLink(
+                    destination: DeviceListView(
+                        viewModel: DeviceListViewModel(c.communicator, date)
+                    ).environmentObject(c)
+                ) {
                     FakeButton(text: "Check Devices").padding()
                 }
             }.padding()

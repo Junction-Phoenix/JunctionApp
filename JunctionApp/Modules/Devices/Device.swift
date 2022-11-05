@@ -6,7 +6,6 @@ struct Device: Identifiable {
     let isOn: Bool
     let consumption: Float
 
-    
     static var Preview: [Device] {
         get {
             return [

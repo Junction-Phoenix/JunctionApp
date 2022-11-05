@@ -1,41 +1,34 @@
 import SwiftUI
 
 struct DeviceStatsView: View {
-    @ObservedObject var viewModel: DailyConsumptionViewModel
+
+    @EnvironmentObject var c: DIContainer
+
+    @ObservedObject var viewModel: DeviceStatsViewModel
 
     var body: some View {
         VStack{
-            Text("Device name")
+            Text(viewModel.device.name)
                 .font(.title2)
                 .bold()
                 .foregroundColor(Color.fromColorCode(.textColor))
 
-            Text(viewModel.date.formattedDate)
-                .foregroundColor(Color.fromColorCode(.textColor))
-
-            UsageStatsView(viewModel: UsageStatsViewModel(viewModel.consumption))
-                .padding(UIConstants.padding)
-
-            DailyGraphView(viewModel: DailyGraphViewModel(viewModel.consumption))
-                .frame(height: 256)
-                .padding(UIConstants.padding)
+            DailyConsumptionView(
+                viewModel: DailyConsumptionViewModel(c.communicator, viewModel.date),
+                deviceId: viewModel.device.id
+            )
 
             Spacer()
         }
         .padding(UIConstants.padding)
-        .task {
-            await viewModel.retrieveConsumption()
-        }
-        .onReceive(viewModel.$date, perform: { date in
-            Task.init{
-                await viewModel.retrieveConsumption()
-            }
-        })
     }
 }
 
 struct DeviceStatsView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceStatsView(viewModel: DailyConsumptionViewModel(Communicator()))
+        let container = Bootstrapper().createContainer()
+
+        DeviceStatsView(viewModel: DeviceStatsViewModel(Device.Preview[0]))
+            .environmentObject(container)
     }
 }

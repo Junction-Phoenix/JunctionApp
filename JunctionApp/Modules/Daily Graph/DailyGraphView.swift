@@ -121,12 +121,12 @@ struct DailyGraphView: View {
                 }
             }
         }
-        .chartYScale(domain: ClosedRange(
-            uncheckedBounds: (
-                lower: 0,
-                upper: 2000
-            )
-        ))
+//        .chartYScale(domain: ClosedRange(
+//            uncheckedBounds: (
+//                lower: 0,
+//                upper: 2000
+//            )
+//        ))
         .chartYAxis {
             AxisMarks(position: .leading, values: .automatic) { value in
                 AxisGridLine(centered: true, stroke: StrokeStyle(dash: [1, 2]))
