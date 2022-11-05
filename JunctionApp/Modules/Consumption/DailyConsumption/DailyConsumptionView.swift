@@ -12,9 +12,11 @@ struct DailyConsumptionView: View {
                 .foregroundColor(Color.fromColorCode(.textColor))
 
             UsageStatsView(viewModel: UsageStatsViewModel(viewModel.consumption))
-
+                .padding(UIConstants.padding)
+            
             DailyGraphView(viewModel: DailyGraphViewModel(viewModel.consumption))
-                .frame(height: 256).padding()
+                .frame(height: 256)
+                .padding(UIConstants.padding)
         }.task {
             await viewModel.retrieveConsumption()
         }
