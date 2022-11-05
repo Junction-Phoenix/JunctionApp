@@ -12,7 +12,7 @@ struct ConsumptionView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Energy Consumption").font(.largeTitle).padding()
+                Text("Energy Consumption").font(.largeTitle).padding(UIConstants.padding)
 
                 DailyConsumptionView(viewModel: DailyConsumptionViewModel(c.communicator, date))
                     .gesture(
@@ -64,8 +64,6 @@ struct ConsumptionView: View {
                 NavigationLink(destination: DeviceListView(viewModel: DeviceListViewModel.Preview)) {
                     FakeButton(text: "Check Devices").padding()
                 }
-
-                Spacer()
             }.padding()
         }
     }

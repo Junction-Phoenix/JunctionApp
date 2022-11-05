@@ -15,7 +15,7 @@ struct DailyConsumptionView: View {
                 .padding(UIConstants.padding)
             
             DailyGraphView(viewModel: DailyGraphViewModel(viewModel.consumption))
-                .frame(height: 256)
+                .frame(height: 336)
                 .padding(UIConstants.padding)
         }
         .task {
