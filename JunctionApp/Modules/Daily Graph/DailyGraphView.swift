@@ -4,6 +4,8 @@ import Charts
 struct DailyGraphView: View {
     @ObservedObject var viewModel: DailyGraphViewModel
 
+    @State var currentTab: String = "actual"
+
     private let lowerBound: Double = 0
     private let upperBound: Double = 25
 
@@ -15,11 +17,20 @@ struct DailyGraphView: View {
     
     var body: some View {
         VStack {
-            Text("Electricity usage over the day")
-                .font(.title3)
-                .foregroundColor(Color.fromColorCode(.textColor))
+            Picker("", selection: $currentTab) {
+                Text("Actual").tag("actual")
+                Text("Predicted").tag("predicted")
+            }
+            .pickerStyle(.segmented)
+            .padding(UIConstants.padding)
 
-            animatedChart()
+            VStack {
+                Text("\(currentTab.capitalized) usage over the day")
+                    .font(.headline)
+                    .foregroundColor(Color.fromColorCode(.textColor))
+
+                animatedChart()
+            }
 
             VStack {
                 HStack {
@@ -89,8 +100,8 @@ struct DailyGraphView: View {
             ForEach(viewModel.consumption) { consumption in
                 BarMark(
                     x: .value("Hour", consumption.id),
-                    y: .value("Consumption", consumption.usage)
-                  //  y: .value("Consumption", consumption.animate ? consumption.usage : 0)
+                    y: .value("Consumption", currentTab == "actual" ? consumption.actualUsage : consumption.estimatedUsage)
+                    //  y: .value("Consumption", consumption.animate ? consumption.usage : 0)
                 ).foregroundStyle(barColor(viewModel.tier(consumption)))
             }
         }
@@ -110,12 +121,12 @@ struct DailyGraphView: View {
                 }
             }
         }
-        .chartYScale(domain: ClosedRange(
-            uncheckedBounds: (
-                lower: 0,
-                upper: 1500
-            )
-        ))
+//        .chartYScale(domain: ClosedRange(
+//            uncheckedBounds: (
+//                lower: 0,
+//                upper: 2000
+//            )
+//        ))
         .chartYAxis {
             AxisMarks(position: .leading, values: .automatic) { value in
                 AxisGridLine(centered: true, stroke: StrokeStyle(dash: [1, 2]))
@@ -129,8 +140,8 @@ struct DailyGraphView: View {
         .onAppear {
             for(index, _) in viewModel.consumption.enumerated() {
                 withAnimation(.easeInOut(duration: 0.8).delay(Double(index) * 0.025)) {
-                        viewModel.consumption[index].animate = true
-                    }
+                    viewModel.consumption[index].animate = true
+                }
             }
         }
     }

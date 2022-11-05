@@ -30,6 +30,16 @@
 		A0874EBB29155D5F00F118EA /* JunctionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0874EBA29155D5F00F118EA /* JunctionApp.swift */; };
 		A0874EBF29155D6100F118EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0874EBE29155D6100F118EA /* Assets.xcassets */; };
 		A0874EC229155D6100F118EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0874EC129155D6100F118EA /* Preview Assets.xcassets */; };
+		A0A5F9142916A40B00416764 /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9132916A40B00416764 /* DeviceListView.swift */; };
+		A0A5F9162916A46A00416764 /* DeviceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9152916A46A00416764 /* DeviceRowView.swift */; };
+		A0A5F9182916A54100416764 /* DeviceRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9172916A54100416764 /* DeviceRowViewModel.swift */; };
+		A0A5F91D2916A77300416764 /* DeviceStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F91C2916A77300416764 /* DeviceStatsView.swift */; };
+		A0A5F91F2916A7A300416764 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F91E2916A7A300416764 /* Device.swift */; };
+		A0A5F9212916A7F300416764 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9202916A7F300416764 /* DeviceListViewModel.swift */; };
+		A0A5F9252916B40900416764 /* FakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9242916B40900416764 /* FakeButton.swift */; };
+		A0A5F9272916BB2100416764 /* DeviceUsageStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9262916BB2100416764 /* DeviceUsageStatsView.swift */; };
+		A0A5F9292916BC7A00416764 /* DeviceStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9282916BC7A00416764 /* DeviceStatsViewModel.swift */; };
+		A0A5F92B2916DA8900416764 /* DeviceDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F92A2916DA8900416764 /* DeviceDto.swift */; };
 		FDFD794A51749297971488B2 /* Pods_JunctionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC7015127477DA097B8FBE /* Pods_JunctionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +70,16 @@
 		A0874EBA29155D5F00F118EA /* JunctionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunctionApp.swift; sourceTree = "<group>"; };
 		A0874EBE29155D6100F118EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0874EC129155D6100F118EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0A5F9132916A40B00416764 /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		A0A5F9152916A46A00416764 /* DeviceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRowView.swift; sourceTree = "<group>"; };
+		A0A5F9172916A54100416764 /* DeviceRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRowViewModel.swift; sourceTree = "<group>"; };
+		A0A5F91C2916A77300416764 /* DeviceStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatsView.swift; sourceTree = "<group>"; };
+		A0A5F91E2916A7A300416764 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		A0A5F9202916A7F300416764 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
+		A0A5F9242916B40900416764 /* FakeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeButton.swift; sourceTree = "<group>"; };
+		A0A5F9262916BB2100416764 /* DeviceUsageStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUsageStatsView.swift; sourceTree = "<group>"; };
+		A0A5F9282916BC7A00416764 /* DeviceStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatsViewModel.swift; sourceTree = "<group>"; };
+		A0A5F92A2916DA8900416764 /* DeviceDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDto.swift; sourceTree = "<group>"; };
 		CD8B9E178DCAB8806A00321C /* Pods-JunctionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JunctionApp.debug.xcconfig"; path = "Target Support Files/Pods-JunctionApp/Pods-JunctionApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +144,7 @@
 			children = (
 				A0667B322915A0C80054DE04 /* DailyConsumptionDto.swift */,
 				A0667B342915A0EE0054DE04 /* ConsumptionDto.swift */,
+				A0A5F92A2916DA8900416764 /* DeviceDto.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,22 +174,24 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A083D631291568B8000DC70C /* Consumption */ = {
+		A083D631291568B8000DC70C /* Total Consumption */ = {
 			isa = PBXGroup;
 			children = (
-				A083D637291572AE000DC70C /* Usage Stats */,
-				A083D63A29157764000DC70C /* Daily Graph */,
-				A0667B2229159B540054DE04 /* DailyConsumption */,
 				A083D63229156953000DC70C /* ConsumptionView.swift */,
 				A0667B1E291588070054DE04 /* Consumption.swift */,
+				A0A5F9242916B40900416764 /* FakeButton.swift */,
 			);
-			path = Consumption;
+			path = "Total Consumption";
 			sourceTree = "<group>";
 		};
 		A083D6362915698A000DC70C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A083D631291568B8000DC70C /* Consumption */,
+				A0667B2229159B540054DE04 /* DailyConsumption */,
+				A083D63A29157764000DC70C /* Daily Graph */,
+				A083D637291572AE000DC70C /* Usage Stats */,
+				A0A5F9112916A3EF00416764 /* Devices */,
+				A083D631291568B8000DC70C /* Total Consumption */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -178,6 +201,7 @@
 			children = (
 				A083D638291572C6000DC70C /* UsageStatsView.swift */,
 				A083D63429156961000DC70C /* UsageStatsViewModel.swift */,
+				A0A5F9262916BB2100416764 /* DeviceUsageStatsView.swift */,
 			);
 			path = "Usage Stats";
 			sourceTree = "<group>";
@@ -249,6 +273,36 @@
 				A0874EC129155D6100F118EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0A5F9112916A3EF00416764 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				A0A5F9192916A74C00416764 /* Device Stats */,
+				A0A5F9122916A3F800416764 /* Device List */,
+				A0A5F91E2916A7A300416764 /* Device.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		A0A5F9122916A3F800416764 /* Device List */ = {
+			isa = PBXGroup;
+			children = (
+				A0A5F9132916A40B00416764 /* DeviceListView.swift */,
+				A0A5F9202916A7F300416764 /* DeviceListViewModel.swift */,
+				A0A5F9152916A46A00416764 /* DeviceRowView.swift */,
+				A0A5F9172916A54100416764 /* DeviceRowViewModel.swift */,
+			);
+			path = "Device List";
+			sourceTree = "<group>";
+		};
+		A0A5F9192916A74C00416764 /* Device Stats */ = {
+			isa = PBXGroup;
+			children = (
+				A0A5F91C2916A77300416764 /* DeviceStatsView.swift */,
+				A0A5F9282916BC7A00416764 /* DeviceStatsViewModel.swift */,
+			);
+			path = "Device Stats";
 			sourceTree = "<group>";
 		};
 		CB9A63E469DFC5BFB9EDA990 /* Pods */ = {
@@ -388,6 +442,7 @@
 				A0667B332915A0C80054DE04 /* DailyConsumptionDto.swift in Sources */,
 				A0667B3D2915C4160054DE04 /* ColorCode.swift in Sources */,
 				A0667B2E29159F750054DE04 /* CommunicatorProtocol.swift in Sources */,
+				A0A5F9292916BC7A00416764 /* DeviceStatsViewModel.swift in Sources */,
 				A083D63529156961000DC70C /* UsageStatsViewModel.swift in Sources */,
 				A0667B382915A1AE0054DE04 /* Bootstrapper.swift in Sources */,
 				A0874EBB29155D5F00F118EA /* JunctionApp.swift in Sources */,
@@ -395,14 +450,23 @@
 				A0667B2529159BD80054DE04 /* DailyConsumptionView.swift in Sources */,
 				A0667B2129158D670054DE04 /* SecondaryButtonStyle.swift in Sources */,
 				A083D639291572C6000DC70C /* UsageStatsView.swift in Sources */,
+				A0A5F9272916BB2100416764 /* DeviceUsageStatsView.swift in Sources */,
+				A0A5F91F2916A7A300416764 /* Device.swift in Sources */,
 				A083D63E2915779C000DC70C /* DailyGraphViewModel.swift in Sources */,
+				A0A5F92B2916DA8900416764 /* DeviceDto.swift in Sources */,
 				A083D63C2915778A000DC70C /* DailyGraphView.swift in Sources */,
 				A083D63329156953000DC70C /* ConsumptionView.swift in Sources */,
+				A0A5F9162916A46A00416764 /* DeviceRowView.swift in Sources */,
+				A0A5F9212916A7F300416764 /* DeviceListViewModel.swift in Sources */,
 				A0667B352915A0EE0054DE04 /* ConsumptionDto.swift in Sources */,
 				A0667B1D291584B90054DE04 /* UIConstants.swift in Sources */,
+				A0A5F9142916A40B00416764 /* DeviceListView.swift in Sources */,
 				A0667B3A2915A1CF0054DE04 /* DIContainer.swift in Sources */,
 				A0667B2A29159E390054DE04 /* DateExtensions.swift in Sources */,
+				A0A5F91D2916A77300416764 /* DeviceStatsView.swift in Sources */,
 				A0667B402915C5250054DE04 /* ColorExtensions.swift in Sources */,
+				A0A5F9252916B40900416764 /* FakeButton.swift in Sources */,
+				A0A5F9182916A54100416764 /* DeviceRowViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

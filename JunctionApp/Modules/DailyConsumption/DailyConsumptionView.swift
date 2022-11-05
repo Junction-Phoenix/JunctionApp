@@ -4,10 +4,12 @@ struct DailyConsumptionView: View {
 
     @ObservedObject var viewModel: DailyConsumptionViewModel
 
+    var deviceId: Int?
+
     var body: some View {
         VStack{
             Text(viewModel.date.formattedDate)
-                .font(.title2)
+                .font(.title3)
                 .bold()
                 .foregroundColor(Color.fromColorCode(.textColor))
 
@@ -15,17 +17,25 @@ struct DailyConsumptionView: View {
                 .padding(UIConstants.padding)
             
             DailyGraphView(viewModel: DailyGraphViewModel(viewModel.consumption))
-                .frame(height: 256)
+                .frame(height: 336)
                 .padding(UIConstants.padding)
         }
         .task {
-            await viewModel.retrieveConsumption()
+            await fetch()
         }
         .onReceive(viewModel.$date, perform: { date in
             Task.init{
-                await viewModel.retrieveConsumption()
+               await fetch()
             }
         })
+    }
+
+    private func fetch() async{
+        if let deviceId = deviceId {
+            await viewModel.retrieveDeviceConsumption(deviceId)
+        } else {
+            await viewModel.retrieveTotalConsumption()
+        }
     }
 }
 
