@@ -19,7 +19,7 @@ struct DeviceListView: View {
                 ForEach(viewModel.devices) { device in
                     NavigationLink(
                         destination: DeviceStatsView(
-                            viewModel: DeviceStatsViewModel(device, viewModel.date)
+                            viewModel: DeviceStatsViewModel(c.communicator, device, viewModel.date)
                         ).environmentObject(c)
                     ) {
                         DeviceRowView(

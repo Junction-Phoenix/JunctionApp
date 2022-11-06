@@ -29,7 +29,7 @@ class DailyConsumptionViewModel: ObservableObject {
 
     @MainActor
     func retrieveDeviceConsumption(_ id: Int) async {
-        let receivedConsumption = await communicator.getDeviceConsumoption(id: id, of: date)
+        let receivedConsumption = await communicator.getDeviceConsumption(id: id, of: date)
 
         if let consumptionData = receivedConsumption?.consumption {
             consumption = consumptionData.map{ $0.toConsumption() }.sorted(by: { $0.id < $1.id })

@@ -40,6 +40,7 @@
 		A0A5F9272916BB2100416764 /* DeviceUsageStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9262916BB2100416764 /* DeviceUsageStatsView.swift */; };
 		A0A5F9292916BC7A00416764 /* DeviceStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F9282916BC7A00416764 /* DeviceStatsViewModel.swift */; };
 		A0A5F92B2916DA8900416764 /* DeviceDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F92A2916DA8900416764 /* DeviceDto.swift */; };
+		A0A5F92D29171B2700416764 /* ScheduleDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5F92C29171B2700416764 /* ScheduleDto.swift */; };
 		FDFD794A51749297971488B2 /* Pods_JunctionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC7015127477DA097B8FBE /* Pods_JunctionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		A0A5F9262916BB2100416764 /* DeviceUsageStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUsageStatsView.swift; sourceTree = "<group>"; };
 		A0A5F9282916BC7A00416764 /* DeviceStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatsViewModel.swift; sourceTree = "<group>"; };
 		A0A5F92A2916DA8900416764 /* DeviceDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDto.swift; sourceTree = "<group>"; };
+		A0A5F92C29171B2700416764 /* ScheduleDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDto.swift; sourceTree = "<group>"; };
 		CD8B9E178DCAB8806A00321C /* Pods-JunctionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JunctionApp.debug.xcconfig"; path = "Target Support Files/Pods-JunctionApp/Pods-JunctionApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				A0667B322915A0C80054DE04 /* DailyConsumptionDto.swift */,
 				A0667B342915A0EE0054DE04 /* ConsumptionDto.swift */,
 				A0A5F92A2916DA8900416764 /* DeviceDto.swift */,
+				A0A5F92C29171B2700416764 /* ScheduleDto.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A5F92D29171B2700416764 /* ScheduleDto.swift in Sources */,
 				A0667B3029159FB30054DE04 /* Communicator.swift in Sources */,
 				A0667B2729159C470054DE04 /* DailyConsumptionViewModel.swift in Sources */,
 				A083D64329158459000DC70C /* PrimaryButtonStyle.swift in Sources */,
