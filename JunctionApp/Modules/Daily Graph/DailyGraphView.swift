@@ -19,7 +19,7 @@ struct DailyGraphView: View {
         VStack {
             Picker("", selection: $currentTab) {
                 Text("Actual").tag("actual")
-                Text("Predicted").tag("predicted")
+                Text("Suggested").tag("suggested")
             }
             .pickerStyle(.segmented)
             .padding(UIConstants.padding)
